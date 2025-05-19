@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather_Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+    <main>
+        <form action="">
+            <input type="text" autocomplete="off" id="valueSearch">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <section class="results">
+            <figure class="name" id="city">
+                <figcaption>Landon</figcaption>
+                <img src="assets/1.png" alt="" style="width:50px;">
+            </figure>
+            <figure class="temprature" id="temprature">
+                <img src="assets/cloudy.png" alt="">
+                <figcaption>
+                    <span>31</span>
+                    <sup>o</sup>
+                </figcaption>
+            </figure>
+            <p class="description">
+                Overcast clouds
+            </p>
+            
+            <ul>
+                <li>
+                    <span>Clouds</span>
+                    <i class="fa-solid fa-cloud"></i>
+                    <span id="clouds">98</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">55</span>
+                </li>
+                <li>
+                    <span>Pressure</span>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span id="pressure">1001 hpa</span>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script type="module" src="Script.js"></script>
+</body>
+</html>
